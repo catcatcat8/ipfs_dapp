@@ -1,1 +1,1 @@
-# ipfs_dapp
+# ipfs-dapp

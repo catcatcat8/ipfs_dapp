@@ -1,0 +1,212 @@
+{
+  "contracts": {
+    "Lottery": "71af242aa653bcd40d65bcf7688baceb53f05fcd",
+    "OpenZeppelin/openzeppelin-contracts@3.0.0/SafeMath": "3b4158955f564edb18bd7a8ffdb49859c904f0b7"
+  },
+  "tests": {
+    "tests/test_approve.py": {
+      "coverage": false,
+      "isolated": [
+        "Lottery",
+        "OpenZeppelin/openzeppelin-contracts@3.0.0/SafeMath"
+      ],
+      "results": "............",
+      "sha1": "e2457042e41efc390a1ee8c0e16aa1e97555ab11",
+      "txhash": []
+    },
+    "tests/test_deposit_transfer.py": {
+      "coverage": false,
+      "isolated": [
+        "Lottery",
+        "OpenZeppelin/openzeppelin-contracts@3.0.0/SafeMath"
+      ],
+      "results": "...........",
+      "sha1": "74a393b3db3890e24e16da5522f8df5661162604",
+      "txhash": [
+        "142527d4183c20787df905904bdfe98d4c4afff7",
+        "1b0255b8fee74391b4c725b0fa4799fe5f39a9e0"
+      ]
+    },
+    "tests/test_transferFrom.py": {
+      "coverage": false,
+      "isolated": [
+        "Lottery",
+        "OpenZeppelin/openzeppelin-contracts@3.0.0/SafeMath"
+      ],
+      "results": ".................",
+      "sha1": "7ee9ebde25557e74f8112dfade3a9cf44aaf09a2",
+      "txhash": [
+        "23d4e3e392f06d2aa92f863e0e83127f47c13a90",
+        "366844e68d8389c1e9f3e10f2c9e9c2200cad067",
+        "7c85c7d4a1b5582448c95edcd036f1c27a079794",
+        "885e186b54990f5b29bb959a72ef86da40a51417",
+        "daa684bd26620a684525097529502ffcc52c4d99"
+      ]
+    }
+  },
+  "tx": {
+    "142527d4183c20787df905904bdfe98d4c4afff7": {
+      "Lottery": {
+        "0": [
+          [
+            74
+          ],
+          [],
+          []
+        ],
+        "4": [
+          [
+            51,
+            52,
+            81,
+            82,
+            83
+          ],
+          [
+            129
+          ],
+          [
+            119,
+            127,
+            128
+          ]
+        ]
+      }
+    },
+    "1b0255b8fee74391b4c725b0fa4799fe5f39a9e0": {
+      "Lottery": {
+        "2": [
+          [
+            80,
+            88,
+            89,
+            102
+          ],
+          [],
+          [
+            135,
+            136,
+            137
+          ]
+        ],
+        "4": [
+          [
+            54
+          ],
+          [
+            120
+          ],
+          []
+        ]
+      }
+    },
+    "23d4e3e392f06d2aa92f863e0e83127f47c13a90": {
+      "Lottery": {
+        "0": [
+          [
+            74
+          ],
+          [],
+          []
+        ],
+        "4": [
+          [
+            9
+          ],
+          [
+            106
+          ],
+          []
+        ]
+      }
+    },
+    "366844e68d8389c1e9f3e10f2c9e9c2200cad067": {
+      "Lottery": {
+        "0": [
+          [
+            74
+          ],
+          [],
+          []
+        ],
+        "4": [
+          [
+            9
+          ],
+          [
+            106
+          ],
+          []
+        ]
+      }
+    },
+    "7c85c7d4a1b5582448c95edcd036f1c27a079794": {
+      "Lottery": {
+        "0": [
+          [
+            74
+          ],
+          [],
+          []
+        ],
+        "4": [
+          [
+            9
+          ],
+          [
+            106
+          ],
+          []
+        ]
+      }
+    },
+    "885e186b54990f5b29bb959a72ef86da40a51417": {
+      "Lottery": {
+        "0": [
+          [
+            74
+          ],
+          [],
+          []
+        ],
+        "4": [
+          [
+            9
+          ],
+          [
+            106
+          ],
+          []
+        ]
+      }
+    },
+    "daa684bd26620a684525097529502ffcc52c4d99": {
+      "Lottery": {
+        "0": [
+          [
+            74
+          ],
+          [],
+          []
+        ],
+        "4": [
+          [
+            9,
+            10,
+            81,
+            82,
+            83
+          ],
+          [
+            129
+          ],
+          [
+            106,
+            127,
+            128
+          ]
+        ]
+      }
+    }
+  }
+}
