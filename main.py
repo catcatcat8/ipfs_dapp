@@ -4,6 +4,8 @@ import sys
 import ipfsApi
 import os
 from brownie import Contract, accounts, network
+import webbrowser
+from PIL import Image
                     
 
 def add_to_ipfs(filename):
@@ -33,7 +35,7 @@ def add_to_contract(contract_address, ipfs_hash, account_id):
 
 
 def get_from_ipfs(contract_address, address, account_id):
-    """Загружает hash из контракта по адресу, загружает из ipfs, отображает файл в {ipfs_hash}.bin"""
+    """Загружает hash из контракта по адресу, загружает из ipfs, возвращает имя нового файла"""
 
     api = ipfsApi.Client('127.0.0.1', 5001)  # требует ipfs-daemon заранее
 
@@ -46,8 +48,16 @@ def get_from_ipfs(contract_address, address, account_id):
     bin_file = open(f'{ipfs_hash}.bin', "w")
 
     os.system(f'ipfs cat /ipfs/{ipfs_hash} >> {ipfs_hash}.bin')  # возвращает data из ipfs в бинарный файл
-    print (f'File: {ipfs_hash}.bin')
-    
+    return f'{ipfs_hash}.bin'
+
+
+def show(filename):
+    """Демонстрирует файл, скачанный из ipfs, в браузере, а также открывает его в средстве просмотра изображений"""
+
+    img = Image.open(filename)
+    img.show()
+    webbrowser.open(f'{filename}')
+
 
 if __name__ == "__main__":
 
@@ -83,4 +93,7 @@ if __name__ == "__main__":
 
     # --- Режим запроса ipfs_hash по адресу из контракта и возвращения данных из ipfs
     if command == "get":
-        get_from_ipfs(contract_address, address, account_id)
+        file_from_ipfs = get_from_ipfs(contract_address, address, account_id)
+        print (f'File: {file_from_ipfs}')
+
+        show(file_from_ipfs)
