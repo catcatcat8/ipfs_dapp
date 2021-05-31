@@ -51,7 +51,12 @@ ipfs daemon
 
 Перед деплоем в файле deploy.py необходимо изменить параметр `666` в строке `acct = accounts.load('666')` на id аккаунта, с которого вы собираетесь деплоить данный контракт.
 
-После чего выполнить команду:
+Выполните команду:
+```bash
+export WEB3_INFURA_PROJECT_ID=1a51541fdffc429596c1b616f9bf1048
+```
+
+После чего выполните команду:
 ```bash
 brownie run deploy.py --network ropsten
 ```
