@@ -92,5 +92,5 @@ python3 main.py --get <адрес по которому был добавлен 
 python3 main.py --get 0xe23b9e48f7e229D6Cb4C361BefC90cC155b42654 0x8dd10Bc8D92ef3485F0d1654293808b254B56672 666
 ```
 
-### Пример работы программы
+### Пример работы программы в тестовой сети ropsten
 ![](example.png "Example")
